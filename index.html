@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深度版 | 竞品分析报告: BC.GAME vs. BetBus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans SC', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .report-content {
+            max-width: 80ch; /* 优化阅读行长 */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .report-content h2 {
+            font-size: 2rem;
+            line-height: 2.5rem;
+            font-weight: 700;
+            color: #1e293b; /* slate-800 */
+            border-bottom: 2px solid #cbd5e1; /* slate-300 */
+            padding-bottom: 0.75rem;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+        }
+        .report-content h3 {
+            font-size: 1.75rem;
+            line-height: 2.25rem;
+            font-weight: 600;
+            color: #334155; /* slate-700 */
+            margin-top: 2.5rem;
+            margin-bottom: 1.25rem;
+        }
+        .report-content h4 {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            font-weight: 600;
+            color: #475569; /* slate-600 */
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .report-content p, .report-content ul, .report-content ol {
+            margin-bottom: 1.25rem;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+        .report-content ul {
+            list-style-type: disc;
+            padding-left: 1.75rem;
+        }
+        .report-content strong {
+            color: #0f172a; /* slate-900 */
+            font-weight: 600;
+        }
+        .report-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.05);
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+        .report-content th, .report-content td {
+            border: 1px solid #e2e8f0; /* slate-200 */
+            padding: 1rem;
+            text-align: left;
+            vertical-align: top;
+        }
+        .report-content th {
+            background-color: #f8fafc; /* slate-50 */
+            font-weight: 600;
+            color: #334155; /* slate-700 */
+        }
+         .report-content tbody tr:nth-child(even) {
+            background-color: #f8fafc; /* slate-50 */
+        }
+        .nav-button {
+            transition: all 0.2s ease-in-out;
+            border: 1px solid transparent;
+        }
+        .nav-button:not(.active):hover {
+            background-color: #f1f5f9; /* slate-100 */
+            border-color: #e2e8f0; /* slate-200 */
+            transform: translateY(-2px);
+        }
+        .nav-button.active {
+            background-color: #1d4ed8; /* blue-700 */
+            color: white;
+            box-shadow: 0 4px 14px 0 rgb(0 119 255 / 39%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-700">
+
+    <div class="container mx-auto px-4 py-8 md:px-8 md:py-12">
+        <header class="text-center mb-10 md:mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-900">iGaming 平台竞品分析</h1>
+            <p class="text-lg text-slate-500 mt-3">BC.GAME vs. BetBus.co.za</p>
+        </header>
+
+        <nav class="flex justify-center bg-white/70 backdrop-blur-md p-2 rounded-xl shadow-lg mb-10 md:mb-12 sticky top-4 z-10 border border-slate-200">
+            <button id="btn-bcgame" class="nav-button active text-sm md:text-base font-semibold py-2 px-4 md:px-6 rounded-lg">BC.GAME 功能与体验</button>
+            <button id="btn-betbus" class="nav-button text-sm md:text-base font-semibold py-2 px-4 md:px-6 rounded-lg ml-2">BetBus.co.za 功能与体验</button>
+            <button id="btn-comparison" class="nav-button text-sm md:text-base font-semibold py-2 px-4 md:px-6 rounded-lg ml-2">竞品对比分析</button>
+        </nav>
+
+        <main id="main-content">
+            <!-- BC.GAME Report -->
+            <div id="report-bcgame" class="report-container bg-white p-6 md:p-10 rounded-xl shadow-xl border border-slate-200">
+                <div class="report-content">
+                    <h1 class="text-3xl md:text-4xl font-bold text-slate-900 text-center mb-8">BC.GAME 全面功能与体验分析</h1>
+                    
+                    <h2>1.0 核心摘要</h2>
+                    <p>本报告旨在深度剖析 BC.GAME 平台的用户体验（UX）与核心功能。分析表明，BC.GAME 提供的是一种<strong>高度分层且目标明确的双轨体验</strong>：</p>
+                    <ul>
+                        <li><strong>对于核心目标用户（高额度、加密原生玩家）</strong>：平台通过无缝的金融交互、深度的游戏化激励以及强社交属性，提供了一种极具吸引力和高粘性的“生态系统级”体验。每一个设计细节，从免KYC的注册到VIP等级的视觉化呈现，都在强化其归属感和成就感。</li>
+                        <li><strong>对于普通休闲玩家</strong>：体验则相对矛盾。一方面，平台提供了行业领先的内容广度；另一方面，其核心激励机制（如欢迎奖金）的高门槛和复杂的系统设计，可能会给这类用户带来困惑和挫败感，导致体验中断。</li>
+                    </ul>
+                    <p>总体而言，BC.GAME 的产品体验设计是其商业成功的关键驱动力，它精准地服务于其核心用户画像，但在用户普适性上做出了战略性取舍。</p>
+
+                    <h2>2.0 用户旅程与功能分析</h2>
+                    <h3>2.1 阶段一：发现与首次引导</h3>
+                    <h4>核心功能点</h4>
+                    <ul>
+                        <li><strong>多渠道注册</strong>：支持传统的邮箱注册，更迎合Web3用户习惯，允许通过Google, Telegram, MetaMask等社交或钱包账户一键登录。</li>
+                        <li><strong>风险导向的KYC策略</strong>：初始阶段“免KYC”是核心卖点，但在用户首次大额提款或触发风控时，平台会要求进行身份验证。</li>
+                    </ul>
+                    <h4>体验分析</h4>
+                    <p>体验<strong>极其流畅（Low-Friction）</strong>。多样化登录选项将注册时间压缩至最短，移除了传统平台最常见的用户流失点。“免KYC”的策略更是一种强大的<strong>心理锚点</strong>，瞬间消除了用户的信任壁垒和操作阻力，完全符合加密用户对“去中心化”和“匿名性”的心理预期，创造了极佳的首次体验。</p>
+
+                    <h3>2.2 阶段二：核心循环与内容探索</h3>
+                    <p>平台通过庞大的内容矩阵满足用户多样化的娱乐需求，这是其核心循环的基石。</p>
+                    <h4>核心功能点</h4>
+                    <ul>
+                        <li><strong>海量游戏库 (>8,000款)</strong>
+                            <ul>
+                                <li><strong>老虎机 (Slots)</strong>: 聚合了Pragmatic Play, NetEnt等顶级供应商的游戏，包含Megaways, Bonus Buy等多种流行玩法。</li>
+                                <li><strong>真人娱乐场 (Live Casino)</strong>: 提供来自Evolution等大厂的真人荷官游戏，包括二十一点、轮盘、百家乐以及高人气的游戏节目 (如 Crazy Time, Monopoly Live)。</li>
+                                <li><strong>体育博彩 (Sportsbook)</strong>: 覆盖超过40种体育项目和电子竞技，提供滚球（In-Play）投注和盘口编辑器（Bet Builder）功能。</li>
+                            </ul>
+                        </li>
+                        <li><strong>BC Originals (自研游戏)</strong>
+                            <ul>
+                                <li><strong>独家内容</strong>: 超过50款内部开发的独家游戏，如Crash, Plinko, Dice, Limbo等，已成为品牌标志。</li>
+                                <li><strong>可证明公平技术 (Provably Fair)</strong>: 核心技术优势，允许玩家独立验证每一局游戏结果的随机性和公平性，是建立用户信任的关键。</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4>体验分析</h4>
+                    <p>面对海量内容，平台的<strong>信息架构（IA）</strong>通过清晰的分类和强大的搜索功能，保证了用户寻找内容的效率。BC Originals专区的突出展示，成功地将用户的注意力引向其最具差异化的内容。整体内容探索体验流畅，但对于新用户可能存在“选择过载”的挑战。</p>
+
+                    <h3>2.3 阶段三：金融交互体验</h3>
+                    <p>金融系统是BC.GAME作为加密原生平台的核心优势所在。</p>
+                    <h4>核心功能点</h4>
+                    <ul>
+                        <li><strong>广泛的加密货币支持 (>150种)</strong>: 支持BTC, ETH, USDT, DOGE等主流币以及大量小众山寨币。</li>
+                        <li><strong>即时存取款</strong>: 利用区块链技术实现分钟级的快速交易，远超传统法币渠道。</li>
+                        <li><strong>法币通道 (On-Ramp)</strong>: 集成MoonPay等第三方支付网关，允许用户使用信用卡直接购买加密货币。</li>
+                        <li><strong>双代币经济系统</strong>:
+                            <ul>
+                                <li><strong>BC Dollar (BCD)</strong>: 1:1锚定美元的内部稳定币，用于发放奖金，通过“投注解锁”机制提升用户活跃度。</li>
+                                <li><strong>BC Coin ($BC)</strong>: 可在二级市场交易的平台原生代币，用于激励和治理，将平台价值与用户利益绑定。</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4>体验分析</h4>
+                    <p>存款体验是平台<strong>最出色的环节之一</strong>，流程直观、快速，给予用户强烈的掌控感。双代币系统的设计虽然复杂，但巧妙地隔离了奖金系统的市场风险，并通过$BC代币将会员体系延伸至投资领域。提款限额的<strong>信息模糊性</strong>是一个体验瑕疵，可能会侵蚀用户信任。</p>
+
+                    <h3>2.4 阶段四：长期参与与留存</h3>
+                    <p>BC.GAME的留存策略是其最强大的护城河，将产品从一个“工具”升级为一个“生态”。</p>
+                    <h4>核心功能点</h4>
+                    <ul>
+                        <li><strong>游戏化的VIP俱乐部</strong>: 包含8个主要等级和140多个细分级别，玩家通过投注赚取经验值（XP）升级。奖励包括升级奖金、返水(Rakeback)、充值(Recharge)、每周/每月现金返还等。</li>
+                        <li><strong>任务/成就系统 (Task Hub)</strong>: 用户通过完成每日和每周任务（如验证邮箱、达到投注额）来解锁BCD奖励。</li>
+                        <li><strong>社交生态系统</strong>:
+                            <ul>
+                                <li><strong>多语言实时聊天室</strong>: 平台的社交中心。</li>
+                                <li><strong>社区论坛</strong>: 用于深度交流。</li>
+                                <li><strong>社交激励功能</strong>: 包括聊天室的“金币雨”(Raining)、“空投”(Coin Drops)以及玩家间的“打赏”(Tip)功能。</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4>体验分析</h4>
+                    <p>VIP系统构建了一个清晰的成长路径，而社交系统则通过营造“虚拟大厅”的氛围和直接的经济激励，将孤独的博彩行为转化为<strong>社群化的共同体验</strong>，极大地提升了用户粘性和在线时长。</p>
+                </div>
+            </div>
+
+            <!-- BetBus.co.za Report -->
+            <div id="report-betbus" class="report-container bg-white p-6 md:p-10 rounded-xl shadow-xl border border-slate-200 hidden">
+                <div class="report-content">
+                    <h1 class="text-3xl md:text-4xl font-bold text-slate-900 text-center mb-8">BetBus.co.za 全面功能与体验分析</h1>
+                    
+                    <h2>1.0 核心摘要</h2>
+                    <p>本报告旨在剖析南非本地博彩平台 BetBus.co.za 的用户体验与核心功能。分析表明，BetBus 提供的是一种<strong>务实、合规且高度本地化的功能性体验</strong>。其产品设计哲学围绕<strong>“简洁、可靠、易用”</strong>展开，精准服务于希望在受监管环境中进行传统体育博彩和游戏的南非本地用户。</p>
+                    <p>与追求复杂生态和全球用户的平台不同，BetBus 的体验优势在于其<strong>无摩擦的本地化支付</strong>和<strong>符合本地法规的信任感</strong>。它在功能创新和用户激励上表现保守，但在核心博彩流程的可用性和可靠性上表现出色。</p>
+
+                    <h2>2.0 用户旅程与功能分析</h2>
+                    <h3>2.1 阶段一：发现与首次引导</h3>
+                    <h4>核心功能点</h4>
+                    <ul>
+                        <li><strong>标准化注册</strong>: 采用传统的表单注册，必须提供南非本地手机号。</li>
+                        <li><strong>强制性FICA验证</strong>: 平台严格遵守南非金融情报中心法案(FICA)，用户在首次提款前必须上传身份和地址证明以完成验证。</li>
+                    </ul>
+                    <h4>体验分析</h4>
+                    <p>网站设计明亮简洁，传递出<strong>直接、可信</strong>的感觉。注册流程中明确提及FICA法规，这在初期就为用户建立了<strong>“合法合规”</strong>的心理预期。FICA验证虽然增加了操作成本，但对于厌恶风险的本地用户来说，这是建立信任的必要步骤，反而是一种<strong>积极的体验信号</strong>。</p>
+
+                    <h3>2.2 阶段二：核心循环与内容探索</h3>
+                     <p>平台功能聚焦，不追求大而全，为用户提供清晰、直接的娱乐选项。</p>
+                    <h4>核心功能点</h4>
+                    <ul>
+                        <li><strong>体育博彩 (核心业务)</strong>
+                            <ul>
+                                <li><strong>赛前与滚球投注</strong>: 重点覆盖足球、橄榄球、板球等南非热门体育项目。</li>
+                                <li><strong>特色功能</strong>: 提供盘口编辑器 (Bet Builder) 和提前兑现 (Cash Out)，支持全额或部分兑现。</li>
+                                <li><strong>数据可视化 (Match Tracker)</strong>: 在滚球界面通过动画模拟比赛进程。</li>
+                            </ul>
+                        </li>
+                        <li><strong>真人游戏与Betgames</strong>
+                             <ul>
+                                <li><strong>真人荷官游戏</strong>: 由Evolution和Pragmatic Play提供，主打高互动性的游戏节目 (Game Shows) 和传统的桌面游戏。</li>
+                                <li><strong>Betgames</strong>: 快节奏、全天候开奖的数字彩票类游戏，由真人主持，如《幸运7》、《骰子对决》等。</li>
+                            </ul>
+                        </li>
+                        <li><strong>拉奇数字 (Lucky Numbers)</strong>
+                            <ul>
+                                <li><strong>玩法</strong>: 高度本地化的功能，允许用户投注于全球各地官方彩票（如南非每日乐透）的开奖结果，而非直接购买彩票。玩法更灵活，赔率更高。</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4>体验分析</h4>
+                    <p>平台以体育博彩为绝对核心，导航结构清晰，用户可以非常快速地找到关心的赛事，<strong>任务路径极短</strong>。投注单(Bet Slip)的设计直观易用。内容种类有限，用户无需在海量选项中选择，这对于目标明确的用户来说是一种<strong>高效的体验</strong>。</p>
+
+                    <h3>2.3 阶段三：金融交互体验</h3>
+                    <p>支付系统是BetBus本地化策略最成功的体现。</p>
+                    <h4>核心功能点</h4>
+                    <ul>
+                        <li><strong>南非本地化支付渠道</strong>
+                            <ul>
+                                <li><strong>银行转账 (EFT)</strong> 和 <strong>银行卡 (Visa/Mastercard)</strong>。</li>
+                                <li><strong>即时支付网关</strong>: 集成 Ozow 和 Peach Payments。</li>
+                                <li><strong>代金券 (Vouchers)</strong>: 支持 1Voucher 和 OTT Voucher，用户可在线下零售店购买后充值。</li>
+                            </ul>
+                        </li>
+                        <li><strong>合规提款</strong>: 提款主要通过银行转账（EFT）进行，前提是用户必须完成FICA验证。</li>
+                    </ul>
+                    <h4>体验分析</h4>
+                    <p>这是 BetBus <strong>本地化体验设计的典范</strong>。特别是代金券支付，完美解决了部分用户没有银行账户或不愿线上交易的痛点。整个存款流程完全贴合本地用户习惯，几乎没有摩擦。合规的提款流程则进一步强化了平台的安全感。</p>
+
+                    <h3>2.4 阶段四：长期参与与留存</h3>
+                    <p>这是 BetBus 产品设计中<strong>相对薄弱</strong>的环节，策略以简单直接为主。</p>
+                    <h4>核心功能点</h4>
+                    <ul>
+                        <li><strong>首次存款欢迎奖金</strong>: 提供100%的存款匹配奖金，上限为 R3,000。</li>
+                        <li><strong>多重彩加成 (Multi Bet Bonus)</strong>: 用户投注的比赛场次越多，中奖后的额外奖金加成越高。</li>
+                    </ul>
+                    <h4>体验分析</h4>
+                    <p>平台的激励系统非常简单，缺少长期的、多样化的促销活动。平台没有VIP体系、任务系统或任何社交功能，用户与平台的关系是纯粹的<strong>“交易型”</strong>关系。这种设计虽然简单，但也牺牲了构建长期用户忠诚度的机会，用户留存完全依赖于赔率和核心功能的可靠性。</p>
+                </div>
+            </div>
+
+            <!-- Comparison Report -->
+            <div id="report-comparison" class="report-container bg-white p-6 md:p-10 rounded-xl shadow-xl border border-slate-200 hidden">
+                <div class="report-content">
+                    <h1 class="text-3xl md:text-4xl font-bold text-slate-900 text-center mb-8">竞品对比分析：BC.GAME vs. BetBus.co.za</h1>
+                    
+                    <h2>1.0 核心结论：两种模式的对决</h2>
+                    <p>BC.GAME 与 BetBus.co.za 代表了当前 iGaming 市场中两种截然不同的成功模式：<strong>全球化的、技术驱动的“加密生态”</strong> vs. <strong>区域性的、合规驱动的“本地专家”</strong>。它们的对比揭示了不同市场环境下，产品战略、用户体验和商业模式的巨大差异。</p>
+                    <ul>
+                        <li><strong>BC.GAME</strong> 是一家科技公司，其产品是一个复杂的、自我强化的数字生态。它通过技术创新（加密支付、可证明公平）和精密的激励系统（VIP、社交）来构建护城河，目标是捕获全球范围内高LTV的加密原生用户。</li>
+                        <li><strong>BetBus.co.za</strong> 是一家持牌博彩运营商，其产品是一个专注、可靠的投注工具。它通过严格的本地合规（FICA）和对本地市场的深刻理解（支付渠道、体育偏好）来建立信任，目标是服务好南非这一特定区域市场。</li>
+                    </ul>
+
+                    <h2>2.0 多维度对比分析</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>维度</th>
+                                <th>BC.GAME</th>
+                                <th>BetBus.co.za</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>市场定位</strong></td>
+                                <td>全球加密货币 iGaming 生态系统</td>
+                                <td>南非本地持牌博彩运营商</td>
+                            </tr>
+                            <tr>
+                                <td><strong>目标用户</strong></td>
+                                <td>全球范围内的加密原生玩家，高额VIP用户</td>
+                                <td>南非本地的体育爱好者和休闲玩家</td>
+                            </tr>
+                            <tr>
+                                <td><strong>核心价值主张</strong></td>
+                                <td>匿名性、技术创新、海量选择、高额回报</td>
+                                <td>合法性、安全性、本地化、简单易用</td>
+                            </tr>
+                            <tr>
+                                <td><strong>产品策略</strong></td>
+                                <td><strong>平台生态化</strong>：聚合上万款游戏，自研游戏，构建社交和代币经济</td>
+                                <td><strong>功能工具化</strong>：聚焦体育博彩核心功能，辅以少量流行游戏</td>
+                            </tr>
+                            <tr>
+                                <td><strong>技术与创新</strong></td>
+                                <td>Web3技术栈，支持150+种加密货币，可证明公平算法</td>
+                                <td>传统Web2技术栈，标准博彩软件解决方案</td>
+                            </tr>
+                            <tr>
+                                <td><strong>信任建立方式</strong></td>
+                                <td>基于技术的信任（算法公平、区块链透明）</td>
+                                <td>基于监管的信任（政府牌照、强制身份验证）</td>
+                            </tr>
+                            <tr>
+                                <td><strong>用户引导 (Onboarding)</strong></td>
+                                <td>极低摩擦：社交/钱包一键登录，初始免KYC</td>
+                                <td>合规优先：标准化注册，强制FICA验证</td>
+                            </tr>
+                            <tr>
+                                <td><strong>金融系统</strong></td>
+                                <td>全球化、去中心化：加密货币存取，即时到账</td>
+                                <td>本地化、中心化：南非银行、支付网关、代金券</td>
+                            </tr>
+                            <tr>
+                                <td><strong>留存与激励策略</strong></td>
+                                <td><strong>深度游戏化</strong>：复杂的VIP等级、任务系统、社交奖励（空投/打赏）</td>
+                                <td><strong>简单促销</strong>：欢迎奖金、多重彩加成</td>
+                            </tr>
+                            <tr>
+                                <td><strong>体验设计哲学</strong></td>
+                                <td>探索与沉浸：鼓励用户探索复杂系统，以获得长期回报</td>
+                                <td>效率与直接：帮助用户以最短路径完成投注任务</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2>3.0 战略启示</h2>
+                    <h4>BC.GAME 的优势与启示：</h4>
+                    <p>BC.GAME 的成功在于它**不仅仅将自己视为一个博彩网站，而是一个互联网产品**。它深刻理解如何通过游戏化、社区化和经济激励来构建一个高粘性的用户生态。其模式对于希望在全球化市场中通过技术创新构建差异化优势的企业具有极高的参考价值。其核心启示是：<strong>未来的用户留存战争，是生态体验的战争。</strong></p>
+
+                    <h4>BetBus.co.za 的优势与启示：</h4>
+                    <p>BetBus 的成功在于其**对特定市场的深度专注和合规运营**。在许多新兴市场，用户最关心的并非最前沿的技术或最复杂的系统，而是<strong>安全感和便捷性</strong>。BetBus 通过持有本地牌照和提供本地化的支付解决方案，完美地解决了这两个核心痛点。其模式证明了在特定区域市场，“做窄做深”依然是一条极为有效的商业路径。其核心启示是：<strong>信任是最好的本地化策略。</strong></p>
+
+                    <h2>4.0 最终结论</h2>
+                    <p>BC.GAME 和 BetBus 并非直接的竞争对手，它们在各自选择的赛道上都取得了成功。它们的对比清晰地表明，iGaming 产品的设计没有唯一的“最优解”，而必须与<strong>市场环境、目标用户和监管框架</strong>高度匹配。BC.GAME 的复杂生态在南非本地可能水土不服，而 BetBus 的简单模式在全球市场则毫无竞争力。理解这种差异，是制定任何成功产品战略的前提。</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // 获取所有按钮和报告容器
+        const btnBcgame = document.getElementById('btn-bcgame');
+        const btnBetbus = document.getElementById('btn-betbus');
+        const btnComparison = document.getElementById('btn-comparison');
+        
+        const reportBcgame = document.getElementById('report-bcgame');
+        const reportBetbus = document.getElementById('report-betbus');
+        const reportComparison = document.getElementById('report-comparison');
+        
+        const buttons = [btnBcgame, btnBetbus, btnComparison];
+        const reports = [reportBcgame, reportBetbus, reportComparison];
+
+        // 切换标签页的函数
+        function switchTab(activeIndex) {
+            // 更新按钮样式
+            buttons.forEach((button, index) => {
+                if (index === activeIndex) {
+                    button.classList.add('active');
+                } else {
+                    button.classList.remove('active');
+                }
+            });
+
+            // 显示或隐藏报告
+            reports.forEach((report, index) => {
+                if (index === activeIndex) {
+                    report.classList.remove('hidden');
+                } else {
+                    report.classList.add('hidden');
+                }
+            });
+            // 切换后滚动到页面顶部
+             window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // 为每个按钮添加点击事件监听器
+        btnBcgame.addEventListener('click', () => switchTab(0));
+        btnBetbus.addEventListener('click', () => switchTab(1));
+        btnComparison.addEventListener('click', () => switchTab(2));
+    </script>
+
+</body>
+</html>
